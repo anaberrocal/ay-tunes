@@ -1,5 +1,8 @@
 import React from "react";
 import "./App.css";
+import SearchBar from "../SearchBar/SearchBar.js";
+import SearchResults from "../SearchResults/SearchResults.js";
+import Playlist from "../Playlist/Playlist";
 
 function App() {
   return (
@@ -10,10 +13,10 @@ function App() {
       </h1>
       </div>
       <div>
-        {/* <SearchBar/> */}
+        <SearchBar/>
         <div class="App-playlist">
-          {/* <SearchResults/> */}
-          {/* <Playlist/> */}
+          <SearchResults/>
+          <Playlist/>
         </div>
       </div>
     </div>
