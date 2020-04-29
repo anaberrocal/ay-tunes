@@ -1,13 +1,13 @@
 import React from 'react';
 import './Track.css';
 
-
-const isRemoval = false;
-
 export default function Track(props) {
+console.log(props)
+    const renderAction = (e) => props.isRemoval ? (<button> - </button>) : (<button> + </button>)
 
-    const renderAction = (e) => isRemoval ? (<button> - </button>) : (<button> + </button>)
-
+    const addTrack  = (track) => {
+       props.onAdd(track);
+    }
     return (
         <div className="Track">
             <div className="Track-info">
@@ -15,7 +15,7 @@ export default function Track(props) {
                 <p>{props.tracks.artist}</p>
                 <p>{props.tracks.album}</p>
            </div>
-           <button className="Track-action">{renderAction()}</button>
+           <button onClick={addTrack} className="Track-action">{renderAction()}</button>
         </div>
     )
 }
