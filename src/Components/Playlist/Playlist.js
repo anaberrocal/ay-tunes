@@ -7,7 +7,6 @@ class Playlist extends Component {
         return (
             <div className="PlayList">
                 <input defaultValue={'New Playlist'}/>
-                <TrackList/>
                 <button class="Playlist-save">SAVE TO SPOTIFY</button>
             </div>
         )

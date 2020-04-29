@@ -6,11 +6,8 @@ class SearchResults extends Component {
     render() {
         return (
             <div className="SearchResults">
-                <h2>These are the songs</h2>
-                <h3>Res.songName</h3>
-                <p>Res.Artist</p>
-                <p>Res.ALbum</p>
-                <TrackList/>
+                <h2>This is what we found</h2>
+                <TrackList tracks={this.props.SearchResults}/>
             </div>
         )
     }
