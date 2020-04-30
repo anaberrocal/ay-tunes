@@ -3,7 +3,6 @@ import "./App.css";
 import SearchBar from "../SearchBar/SearchBar.js";
 import SearchResults from "../SearchResults/SearchResults.js";
 import Playlist from "../Playlist/Playlist";
-import TrackList from "../TrackList/TrackList";
 
 class App extends React.Component {
   constructor(props) {
@@ -12,6 +11,7 @@ class App extends React.Component {
     this.removeTrack = this.removeTrack.bind(this);
     this.updatePlaylistName = this.updatePlaylistName.bind(this);
     this.savePlaylist = this.savePlaylist.bind(this);
+    this.search = this.search.bind(this);
     this.state = {
       searchResults: [
         {
@@ -35,10 +35,10 @@ class App extends React.Component {
       ],
       playlistTracks: [
         {
-          id: 1,
-          song: "Just Dance",
-          artist: "Lady Gaga",
-          album: "Just Dance",
+          id: 3,
+          song: "Honeymoon Avenue",
+          artist: "Ariana Grande",
+          album: "Yours truly",
         },
         {
           id: 2,
@@ -47,7 +47,7 @@ class App extends React.Component {
           album: "By Your Side",
         },
         {
-          id: 3,
+          id: 5,
           song: "Ocean Eyes",
           artist: "Billie Eilish",
           album: "Billie Eilish",
@@ -97,8 +97,20 @@ class App extends React.Component {
     const trackURIs = this.state.playlistTracks.map( track => track.uri);
    };
 
+   search(term) {
+     console.log(term)
+    //  this.setState({
+    //    searchResults: [
+    //      {
+    //      song: '',
+    //      artist:'',
+    //      album: '',
+    //      }
+    //    ]
+    //  })
+   }
+
   render() {
-    console.log(this.state.SearchResults);
     return (
       <div className="App">
         <div className="titleContainer">
@@ -107,7 +119,9 @@ class App extends React.Component {
           </h1>
         </div>
         <div>
-          <SearchBar />
+          <SearchBar 
+          onSearch={this.search}
+          />
           <div className="App-playlist">
             <SearchResults 
             onAdd={this.addTrack} 
