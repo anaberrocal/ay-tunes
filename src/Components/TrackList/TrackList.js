@@ -13,7 +13,8 @@ class TrackList extends Component {
                        onRemove={this.props.onRemove} 
                        onAdd={this.props.onAdd} 
                        tracks={track} 
-                       key={track.id} />
+                       key={track.id} 
+                       />
                   
                     })
                 }

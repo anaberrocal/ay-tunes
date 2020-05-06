@@ -1,10 +1,16 @@
 import React from 'react';
 import './Track.css';
 
-export default function Track(props) {
+function Track(props) {
 
-    const renderAction = (e) => props.isRemoval ? (<button onClick={removeTrack}> - </button>) : (<button onClick={addTrack}> + </button>)
-
+    const renderAction = (e) =>{ 
+       if(props.isRemoval) {
+             return <button className="Track-action" onClick={removeTrack}> - </button>
+             }
+             else{
+             return <button className="Track-action" onClick={addTrack}> + </button>
+            }
+    }
     const addTrack  = (track) => {
        props.onAdd(track);
     }
@@ -17,11 +23,12 @@ export default function Track(props) {
     return (
         <div className="Track">
             <div className="Track-info">
-                <h3>{props.tracks.song}</h3>
-                <p>{props.tracks.artist}</p>
-                <p>{props.tracks.album}</p>
+                <h3>{props.tracks.name}</h3>
+                <p>{props.tracks.artists} | {props.tracks.album}</p>
            </div>
-           <button className="Track-action">{renderAction()}</button>
+           {renderAction()}
         </div>
     )
 }
+
+export default Track
