@@ -55,6 +55,7 @@ class App extends React.Component {
         playlistTracks: [],
       })
      })
+     .then(alert("Enjoy your new playlist!"))
    };
 
    search(term) {
