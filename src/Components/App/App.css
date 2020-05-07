@@ -14,7 +14,7 @@ html,
 html {
   font-size: 18px;
 }
-
+/* 
 h1 {
   background-color: hotpink;
   padding: .77rem 0;
@@ -22,11 +22,17 @@ h1 {
   font-family: 'Poppins', sans-serif;
   font-size: 1.88rem;
   color: #ffffff;
-}
+} */
 
 h2 {
   font-family: 'Poppins', sans-serif;
   font-size: 1.55rem;
+}
+.titleContainer img {
+  margin-top: 3px;
+  padding-top: 3px;
+  width: 50%;
+  height: 20%;
 }
 
 .App {

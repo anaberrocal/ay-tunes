@@ -4,6 +4,7 @@ import SearchBar from "../SearchBar/SearchBar.js";
 import SearchResults from "../SearchResults/SearchResults.js";
 import Playlist from "../Playlist/Playlist";
 import Spotify from "../../util/Spotify";
+import header from "../../assets/AyTunes_Header.png";
 
 class App extends React.Component {
   constructor(props) {
@@ -66,9 +67,10 @@ class App extends React.Component {
     return (
       <div className="App">
         <div className="titleContainer">
-          <h1>
+          {/* <h1>
             Ay!<span className="highlight">Tunes</span>
-          </h1>
+          </h1> */}
+          <img src={header} alt="header"/>
         </div>
         <div>
           <SearchBar 
