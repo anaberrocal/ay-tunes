@@ -8,7 +8,7 @@ class SearchResults extends Component {
             <div className="SearchResults">
                 <h2>This is what we found</h2>
                 <TrackList 
-                isRemoval={true} 
+                isRemoval={false} 
                 onAdd={this.props.onAdd}
                 tracks={this.props.SearchResults}
                 />
