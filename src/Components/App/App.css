@@ -1,10 +1,7 @@
 .App {
   text-align: center;
 }
-/* h1 .highlight {
-  color: #6c41ec;
-  background: transparent;
-} */
+
 body,
 html,
 #root {
@@ -21,12 +18,12 @@ h2 {
 }
 
 .header{
-  border: 5px solid red;
-  width: 70%;
-  margin-top: -5rem;
-  margin-bottom: 1rem;
+  width: 65%;
+  margin-top: -8rem;
+  margin-bottom: -17rem;
+  padding-bottom: -5rem;
+  padding-top: -5rem;
 }
-
 
 .App {
   height: 100%;
@@ -46,10 +43,27 @@ h2 {
     align-items: center;
     flex-direction: column;
   }
-
-.header{
-  width: 100%;
-  margin-top: -1rem;
+  .header{
+    width: 100%;
+    margin-top: -1rem;
+  }
+}
+#footer-container {
+  text-align: center;
+  position:fixed;
+  left:0px;
+  bottom:0px;
+  height:40px;
+  width:100%;
+  background:#9765b1;
+  color: #ffffff;
 }
 
+.footer{
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  padding: 10px;
+}
+.footer a {
+  text-decoration: none;
 }
