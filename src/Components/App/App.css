@@ -1,10 +1,10 @@
 .App {
   text-align: center;
 }
-h1 .highlight {
+/* h1 .highlight {
   color: #6c41ec;
   background: transparent;
-}
+} */
 body,
 html,
 #root {
@@ -14,33 +14,25 @@ html,
 html {
   font-size: 18px;
 }
-/* 
-h1 {
-  background-color: hotpink;
-  padding: .77rem 0;
-  text-align: center;
-  font-family: 'Poppins', sans-serif;
-  font-size: 1.88rem;
-  color: #ffffff;
-} */
 
 h2 {
   font-family: 'Poppins', sans-serif;
   font-size: 1.55rem;
 }
-.titleContainer img {
-  margin-top: 3px;
-  padding-top: 3px;
-  width: 50%;
-  height: 20%;
+
+.header{
+  border: 5px solid red;
+  width: 70%;
+  margin-top: -5rem;
+  margin-bottom: 1rem;
 }
+
 
 .App {
   height: 100%;
   padding: 0 17% 10% 17%;
   font-family: 'Work Sans', sans-serif;
   font-weight: 500;
-  color: #fff;
 }
 
 .App-playlist {
@@ -54,4 +46,10 @@ h2 {
     align-items: center;
     flex-direction: column;
   }
+
+.header{
+  width: 100%;
+  margin-top: -1rem;
+}
+
 }
