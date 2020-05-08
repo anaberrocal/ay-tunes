@@ -6,7 +6,6 @@
     margin-top: 1.27rem;
     background-color: #9765b1;
     text-align: center;
-  /* font-size: .833rem;   */
     transition: background-color 0.25s;
     border: 0px;
     font-weight: 500;
@@ -27,19 +26,22 @@
 }
 
   .PlayList {
+    border-radius: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 37%;
+    width: 50%;
     max-height: 950px;
     color: #ffffff;
     overflow-y: scroll;
     background-color: #ac2688;
     padding: 2.27rem 1.16rem;
     box-shadow: 0 4px 2px 2px #2b2d2f;
+    margin: 20px;
 }
 
 .PlayList input {
+  border: outlined;
     width: 100%;
     border: 0;
     outline: 0;
