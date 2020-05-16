@@ -1,0 +1,25 @@
+{
+  "short_name": "Ay! Tunes",
+  "name": "Ay! Tunes",
+  "icons": [
+    {
+      "src": "ay_Tunes.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "ay_Tunes.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "ay_Tunes.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
