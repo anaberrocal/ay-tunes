@@ -13,22 +13,22 @@ html {
 }
 
 h2 {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 1.55rem;
 }
 
-.header{
+.header {
   width: 65%;
-  margin-top: -8rem;
+  margin-top: -7rem;
+  padding: 0rem;
   margin-bottom: -17rem;
   padding-bottom: -5rem;
-  padding-top: -5rem;
 }
 
 .App {
   height: 100%;
   padding: 0 17% 10% 17%;
-  font-family: 'Work Sans', sans-serif;
+  font-family: "Work Sans", sans-serif;
   font-weight: 500;
 }
 
@@ -43,24 +43,39 @@ h2 {
     align-items: center;
     flex-direction: column;
   }
-  .header{
+  .header {
     width: 100%;
     margin-top: -1rem;
+    margin-top: -3rem;
+    margin-bottom: -9rem;
+    padding-bottom: 0rem;  
   }
+}
+
+
+@media only screen and (max-width: 1024px) and (min-width: 1023px){
+  .header {
+    width: 100%;
+    margin-top: -1rem;
+    margin-top: -3rem;
+    margin-bottom: -17rem;
+    padding-bottom: 0rem;  
+  }
+
 }
 #footer-container {
   text-align: center;
-  position:fixed;
-  left:0px;
-  bottom:0px;
-  height:40px;
-  width:100%;
-  background:#9765b1;
+  position: fixed;
+  left: 0px;
+  bottom: 0px;
+  height: 40px;
+  width: 100%;
+  background: #9765b1;
   color: #ffffff;
 }
 
-.footer{
-  font-family: 'Poppins', sans-serif;
+.footer {
+  font-family: "Poppins", sans-serif;
   text-align: center;
   padding: 10px;
 }
